@@ -2,11 +2,12 @@
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class Podman430 < Formula
-  desc "Podman version 4.3.0"
-  homepage "https://github.com/RajanKhadilkar/homebrew-podman"
-  url "https://github.com/containers/podman/archive/refs/tags/v4.3.0.tar.gz"
+  desc "Tool for managing OCI containers and pods"
+  homepage "https://podman.io/"
+  url "https://github.com/containers/podman/archive/v4.3.0.tar.gz"
   sha256 "55a3a09b80f23f78aaeb74fbf878fa0b1ef1842e5b282ad61e82a9dc4c74bf34"
-  license "MIT"
+  license all_of: ["Apache-2.0", "GPL-3.0-or-later"]
+  head "https://github.com/containers/podman.git", branch: "main"
 
   # depends_on "cmake" => :build
 
